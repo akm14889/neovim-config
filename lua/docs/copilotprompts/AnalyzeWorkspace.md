@@ -18,5 +18,6 @@ Based on your analysis:
 3. Highlight potential issues or areas for improvement
 4. Suggest specific refactoring opportunities
 5. Recommend best practices that could be applied
+6.
 
 Be specific in your feedback, referencing particular files and line numbers where appropriate. Focus on actionable recommendations that would have the most impact.
