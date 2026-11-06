@@ -10,6 +10,7 @@ return {
 		"nvim-telescope/telescope.nvim",
 		"nvim-tree/nvim-web-devicons",
 		"zbirenbaum/copilot.lua",
+		{ "ColinKennedy/mega.cmdparse", dependencies = { "ColinKennedy/mega.logging" } },
 		{
 			-- support for image pasting
 			"HakonHarnes/img-clip.nvim",
@@ -34,15 +35,19 @@ return {
 		},
 	},
 	build = "make",
+	-- opts = {
+	-- 	provider = "copilot",
+	-- 	copilot = {
+	-- 		model = "gpt-4o-2024-11-20",
+	-- 		-- model = "gpt-o3-mini",
+	-- 	},
+	-- },
 	opts = {
-		provider = "copilot",
-		copilot = {
-			model = "gpt-4o-2024-11-20",
-			-- model = "gpt-o3-mini",
+		provider = "claude",
+		providers = {
+			claude = {
+				model = "claude-sonnet-5-5",
+			},
 		},
 	},
-	-- opts = {
-	-- 	provider = "claude",
-	-- 	model = "claude-3-7-sonnet-20250219",
-	-- },
 }
