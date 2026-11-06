@@ -12,6 +12,8 @@ return {
 	},
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
+		-- pinned: newer versions removed CopilotChat.select/context API used below
+		commit = "f84727fd79f726b7e848adf89108d66805638f06",
 		dependencies = {
 			{ "nvim-lua/plenary.nvim", branch = "master" },
 			{ "nvim-telescope/telescope.nvim" },

@@ -25,9 +25,11 @@ return {
     })
 
     mason_lspconfig.setup({
+      -- stylua is a formatter (handled by conform), not a language server
+      automatic_enable = { exclude = { "stylua" } },
       -- list of servers for mason to install
       ensure_installed = {
-        "tsserver",
+        "ts_ls",
         "html",
         "cssls",
         "tailwindcss",
